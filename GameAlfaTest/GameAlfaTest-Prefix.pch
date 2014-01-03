@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'GameAlfaTest' target in the 'GameAlfaTest' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif

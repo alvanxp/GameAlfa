@@ -24,6 +24,39 @@
 		A8005589176BF8CB00C3659B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005588176BF8CB00C3659B /* second@2x.png */; };
 		A800558C176BF8CB00C3659B /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558A176BF8CB00C3659B /* FirstViewController.xib */; };
 		A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558D176BF8CB00C3659B /* SecondViewController.xib */; };
+		A800559A176C49DD00C3659B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
+		A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
+		A8138BCB1799777F00527CDE /* Intention.m in Sources */ = {isa = PBXBuildFile; fileRef = A8138BCA1799777F00527CDE /* Intention.m */; };
+		A8138BCC1799786D00527CDE /* Intention.m in Sources */ = {isa = PBXBuildFile; fileRef = A8138BCA1799777F00527CDE /* Intention.m */; };
+		A889505E176E2F67000486DC /* ProjectDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F26D176D673B00924DCB /* ProjectDB.m */; };
+		A889505F176E2F82000486DC /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F243176D607000924DCB /* FMDatabase.m */; };
+		A8895060176E2FA6000486DC /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F245176D607000924DCB /* FMDatabaseAdditions.m */; };
+		A8895061176E2FA6000486DC /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F247176D607000924DCB /* FMDatabasePool.m */; };
+		A8895062176E2FA6000486DC /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F249176D607000924DCB /* FMDatabaseQueue.m */; };
+		A8895063176E2FA6000486DC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F24C176D607000924DCB /* FMResultSet.m */; };
+		A8895064176E2FD5000486DC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
+		A8895065176E6E04000486DC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
+		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
+		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
+		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
+		A89E4DF4179B7AC5008D091B /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */; };
+		A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */; };
+		A8A3F24D176D607000924DCB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F243176D607000924DCB /* FMDatabase.m */; };
+		A8A3F24E176D607000924DCB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F245176D607000924DCB /* FMDatabaseAdditions.m */; };
+		A8A3F24F176D607000924DCB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F247176D607000924DCB /* FMDatabasePool.m */; };
+		A8A3F250176D607000924DCB /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F249176D607000924DCB /* FMDatabaseQueue.m */; };
+		A8A3F252176D607000924DCB /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F24C176D607000924DCB /* FMResultSet.m */; };
+		A8A3F25B176D653C00924DCB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A3F25A176D653C00924DCB /* SenTestingKit.framework */; };
+		A8A3F25C176D653C00924DCB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8005564176BF8CB00C3659B /* UIKit.framework */; };
+		A8A3F25D176D653C00924DCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8005566176BF8CB00C3659B /* Foundation.framework */; };
+		A8A3F263176D653C00924DCB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A8A3F261176D653C00924DCB /* InfoPlist.strings */; };
+		A8A3F266176D653C00924DCB /* GameAlfaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F265176D653C00924DCB /* GameAlfaTest.m */; };
+		A8A3F26E176D673B00924DCB /* ProjectDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F26D176D673B00924DCB /* ProjectDB.m */; };
+		A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */; };
+		A8A4F4A61793A18E00D7013F /* IntentionDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4A51793A18E00D7013F /* IntentionDB.m */; };
+		A8A4F4AB17942CA900D7013F /* IntentionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4AA17942CA900D7013F /* IntentionTest.m */; };
+		A8AF210D17978F840006433F /* IntentionDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4A51793A18E00D7013F /* IntentionDB.m */; };
+		A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E672C1179CAECA00FBCFCD /* ProjectCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +83,48 @@
 		A8005588176BF8CB00C3659B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		A800558B176BF8CB00C3659B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
 		A800558E176BF8CB00C3659B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		A8005598176C49DD00C3659B /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = GameAlfa/Project.h; sourceTree = "<group>"; };
+		A8005599176C49DD00C3659B /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = GameAlfa/Project.m; sourceTree = "<group>"; };
+		A800559F176CA13100C3659B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A8138BC91799777F00527CDE /* Intention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intention.h; path = DomainModel/Intention.h; sourceTree = "<group>"; };
+		A8138BCA1799777F00527CDE /* Intention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intention.m; path = DomainModel/Intention.m; sourceTree = "<group>"; };
+		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
+		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
+		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
+		A89A1BBA17AE9ED9006B6CC6 /* Step.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Step.m; path = DomainModel/Step.m; sourceTree = "<group>"; };
+		A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectTableViewController.h; sourceTree = "<group>"; };
+		A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTableViewController.m; sourceTree = "<group>"; };
+		A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryBoard.storyboard; path = ../MainStoryBoard.storyboard; sourceTree = "<group>"; };
+		A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCustomColoredAccessory.h; sourceTree = "<group>"; };
+		A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCustomColoredAccessory.m; sourceTree = "<group>"; };
+		A8A3F242176D607000924DCB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = GameAlfa/FMDatabase.h; sourceTree = "<group>"; };
+		A8A3F243176D607000924DCB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = GameAlfa/FMDatabase.m; sourceTree = "<group>"; };
+		A8A3F244176D607000924DCB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = GameAlfa/FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		A8A3F245176D607000924DCB /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseAdditions.m; path = GameAlfa/FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		A8A3F246176D607000924DCB /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabasePool.h; path = GameAlfa/FMDatabasePool.h; sourceTree = "<group>"; };
+		A8A3F247176D607000924DCB /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabasePool.m; path = GameAlfa/FMDatabasePool.m; sourceTree = "<group>"; };
+		A8A3F248176D607000924DCB /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseQueue.h; path = GameAlfa/FMDatabaseQueue.h; sourceTree = "<group>"; };
+		A8A3F249176D607000924DCB /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabaseQueue.m; path = GameAlfa/FMDatabaseQueue.m; sourceTree = "<group>"; };
+		A8A3F24A176D607000924DCB /* fmdb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fmdb.m; path = GameAlfa/fmdb.m; sourceTree = "<group>"; };
+		A8A3F24B176D607000924DCB /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMResultSet.h; path = GameAlfa/FMResultSet.h; sourceTree = "<group>"; };
+		A8A3F24C176D607000924DCB /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = GameAlfa/FMResultSet.m; sourceTree = "<group>"; };
+		A8A3F259176D653C00924DCB /* GameAlfaTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameAlfaTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A3F25A176D653C00924DCB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8A3F260176D653C00924DCB /* GameAlfaTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameAlfaTest-Info.plist"; sourceTree = "<group>"; };
+		A8A3F262176D653C00924DCB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A8A3F264176D653C00924DCB /* GameAlfaTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameAlfaTest.h; sourceTree = "<group>"; };
+		A8A3F265176D653C00924DCB /* GameAlfaTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameAlfaTest.m; sourceTree = "<group>"; };
+		A8A3F267176D653C00924DCB /* GameAlfaTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameAlfaTest-Prefix.pch"; sourceTree = "<group>"; };
+		A8A3F26C176D673B00924DCB /* ProjectDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectDB.h; path = DomainModel/ProjectDB.h; sourceTree = "<group>"; };
+		A8A3F26D176D673B00924DCB /* ProjectDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectDB.m; path = DomainModel/ProjectDB.m; sourceTree = "<group>"; };
+		A8A43A7417A77B580079E766 /* ProjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectDetailViewController.h; path = ../ProjectDetailViewController.h; sourceTree = "<group>"; };
+		A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectDetailViewController.m; path = ../ProjectDetailViewController.m; sourceTree = "<group>"; };
+		A8A4F4A41793A18D00D7013F /* IntentionDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntentionDB.h; path = DomainModel/IntentionDB.h; sourceTree = "<group>"; };
+		A8A4F4A51793A18E00D7013F /* IntentionDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntentionDB.m; path = DomainModel/IntentionDB.m; sourceTree = "<group>"; };
+		A8A4F4A917942CA900D7013F /* IntentionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionTest.h; sourceTree = "<group>"; };
+		A8A4F4AA17942CA900D7013F /* IntentionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionTest.m; sourceTree = "<group>"; };
+		A8E672C0179CAECA00FBCFCD /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
+		A8E672C1179CAECA00FBCFCD /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +132,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */,
 				A8005565176BF8CB00C3659B /* UIKit.framework in Frameworks */,
 				A8005567176BF8CB00C3659B /* Foundation.framework in Frameworks */,
 				A8005569176BF8CB00C3659B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A3F255176D653C00924DCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8895064176E2FD5000486DC /* libsqlite3.0.dylib in Frameworks */,
+				A8A3F25B176D653C00924DCB /* SenTestingKit.framework in Frameworks */,
+				A8A3F25C176D653C00924DCB /* UIKit.framework in Frameworks */,
+				A8A3F25D176D653C00924DCB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +156,11 @@
 		A8005555176BF8CB00C3659B = {
 			isa = PBXGroup;
 			children = (
+				A8A3F26B176D656000924DCB /* DomainModel */,
+				A80055A1176CA1B200C3659B /* fmdb */,
+				A800559F176CA13100C3659B /* libsqlite3.0.dylib */,
 				A800556A176BF8CB00C3659B /* GameAlfa */,
+				A8A3F25E176D653C00924DCB /* GameAlfaTest */,
 				A8005563176BF8CB00C3659B /* Frameworks */,
 				A8005561176BF8CB00C3659B /* Products */,
 			);
@@ -79,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A8005560176BF8CB00C3659B /* GameAlfa.app */,
+				A8A3F259176D653C00924DCB /* GameAlfaTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +181,7 @@
 				A8005564176BF8CB00C3659B /* UIKit.framework */,
 				A8005566176BF8CB00C3659B /* Foundation.framework */,
 				A8005568176BF8CB00C3659B /* CoreGraphics.framework */,
+				A8A3F25A176D653C00924DCB /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -96,6 +189,11 @@
 		A800556A176BF8CB00C3659B /* GameAlfa */ = {
 			isa = PBXGroup;
 			children = (
+				A8A43A7417A77B580079E766 /* ProjectDetailViewController.h */,
+				A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */,
+				A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */,
+				A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */,
+				A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */,
 				A8005573176BF8CB00C3659B /* AppDelegate.h */,
 				A8005574176BF8CB00C3659B /* AppDelegate.m */,
 				A800557C176BF8CB00C3659B /* FirstViewController.h */,
@@ -109,6 +207,10 @@
 				A800558A176BF8CB00C3659B /* FirstViewController.xib */,
 				A800558D176BF8CB00C3659B /* SecondViewController.xib */,
 				A800556B176BF8CB00C3659B /* Supporting Files */,
+				A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */,
+				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
+				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
+				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
 			);
 			path = GameAlfa;
 			sourceTree = "<group>";
@@ -125,6 +227,65 @@
 				A800557A176BF8CB00C3659B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A80055A1176CA1B200C3659B /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3F242176D607000924DCB /* FMDatabase.h */,
+				A8A3F243176D607000924DCB /* FMDatabase.m */,
+				A8A3F244176D607000924DCB /* FMDatabaseAdditions.h */,
+				A8A3F245176D607000924DCB /* FMDatabaseAdditions.m */,
+				A8A3F246176D607000924DCB /* FMDatabasePool.h */,
+				A8A3F247176D607000924DCB /* FMDatabasePool.m */,
+				A8A3F248176D607000924DCB /* FMDatabaseQueue.h */,
+				A8A3F249176D607000924DCB /* FMDatabaseQueue.m */,
+				A8A3F24A176D607000924DCB /* fmdb.m */,
+				A8A3F24B176D607000924DCB /* FMResultSet.h */,
+				A8A3F24C176D607000924DCB /* FMResultSet.m */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+		A8A3F25E176D653C00924DCB /* GameAlfaTest */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3F264176D653C00924DCB /* GameAlfaTest.h */,
+				A8A3F265176D653C00924DCB /* GameAlfaTest.m */,
+				A8A3F25F176D653C00924DCB /* Supporting Files */,
+				A8A4F4A917942CA900D7013F /* IntentionTest.h */,
+				A8A4F4AA17942CA900D7013F /* IntentionTest.m */,
+			);
+			path = GameAlfaTest;
+			sourceTree = "<group>";
+		};
+		A8A3F25F176D653C00924DCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8A3F260176D653C00924DCB /* GameAlfaTest-Info.plist */,
+				A8A3F261176D653C00924DCB /* InfoPlist.strings */,
+				A8A3F267176D653C00924DCB /* GameAlfaTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A8A3F26B176D656000924DCB /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				A8005599176C49DD00C3659B /* Project.m */,
+				A8005598176C49DD00C3659B /* Project.h */,
+				A8A3F26C176D673B00924DCB /* ProjectDB.h */,
+				A8A3F26D176D673B00924DCB /* ProjectDB.m */,
+				A8A4F4A41793A18D00D7013F /* IntentionDB.h */,
+				A8A4F4A51793A18E00D7013F /* IntentionDB.m */,
+				A8138BC91799777F00527CDE /* Intention.h */,
+				A8138BCA1799777F00527CDE /* Intention.m */,
+				A89A1BB517AE94F6006B6CC6 /* Level.h */,
+				A89A1BB617AE94F6006B6CC6 /* Level.m */,
+				A89A1BB917AE9ED9006B6CC6 /* Step.h */,
+				A89A1BBA17AE9ED9006B6CC6 /* Step.m */,
+			);
+			name = DomainModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +307,24 @@
 			productName = GameAlfa;
 			productReference = A8005560176BF8CB00C3659B /* GameAlfa.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A8A3F258176D653C00924DCB /* GameAlfaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8A3F268176D653C00924DCB /* Build configuration list for PBXNativeTarget "GameAlfaTest" */;
+			buildPhases = (
+				A8A3F254176D653C00924DCB /* Sources */,
+				A8A3F255176D653C00924DCB /* Frameworks */,
+				A8A3F256176D653C00924DCB /* Resources */,
+				A8A3F257176D653C00924DCB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameAlfaTest;
+			productName = GameAlfaTest;
+			productReference = A8A3F259176D653C00924DCB /* GameAlfaTest.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -169,6 +348,7 @@
 			projectRoot = "";
 			targets = (
 				A800555F176BF8CB00C3659B /* GameAlfa */,
+				A8A3F258176D653C00924DCB /* GameAlfaTest */,
 			);
 		};
 /* End PBXProject section */
@@ -188,10 +368,35 @@
 				A8005589176BF8CB00C3659B /* second@2x.png in Resources */,
 				A800558C176BF8CB00C3659B /* FirstViewController.xib in Resources */,
 				A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */,
+				A89E4DF4179B7AC5008D091B /* MainStoryBoard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A3F256176D653C00924DCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A3F263176D653C00924DCB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8A3F257176D653C00924DCB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A800555C176BF8CB00C3659B /* Sources */ = {
@@ -202,6 +407,39 @@
 				A8005575176BF8CB00C3659B /* AppDelegate.m in Sources */,
 				A800557E176BF8CB00C3659B /* FirstViewController.m in Sources */,
 				A8005585176BF8CB00C3659B /* SecondViewController.m in Sources */,
+				A800559A176C49DD00C3659B /* Project.m in Sources */,
+				A8A3F24D176D607000924DCB /* FMDatabase.m in Sources */,
+				A8A3F24E176D607000924DCB /* FMDatabaseAdditions.m in Sources */,
+				A8A3F24F176D607000924DCB /* FMDatabasePool.m in Sources */,
+				A8A3F250176D607000924DCB /* FMDatabaseQueue.m in Sources */,
+				A8A3F252176D607000924DCB /* FMResultSet.m in Sources */,
+				A8A3F26E176D673B00924DCB /* ProjectDB.m in Sources */,
+				A8A4F4A61793A18E00D7013F /* IntentionDB.m in Sources */,
+				A8138BCB1799777F00527CDE /* Intention.m in Sources */,
+				A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */,
+				A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */,
+				A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */,
+				A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */,
+				A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */,
+				A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8A3F254176D653C00924DCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8138BCC1799786D00527CDE /* Intention.m in Sources */,
+				A8AF210D17978F840006433F /* IntentionDB.m in Sources */,
+				A8895065176E6E04000486DC /* Project.m in Sources */,
+				A8895060176E2FA6000486DC /* FMDatabaseAdditions.m in Sources */,
+				A8895061176E2FA6000486DC /* FMDatabasePool.m in Sources */,
+				A8895062176E2FA6000486DC /* FMDatabaseQueue.m in Sources */,
+				A8895063176E2FA6000486DC /* FMResultSet.m in Sources */,
+				A889505F176E2F82000486DC /* FMDatabase.m in Sources */,
+				A8A4F4AB17942CA900D7013F /* IntentionTest.m in Sources */,
+				A889505E176E2F67000486DC /* ProjectDB.m in Sources */,
+				A8A3F266176D653C00924DCB /* GameAlfaTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +468,14 @@
 				A800558E176BF8CB00C3659B /* en */,
 			);
 			name = SecondViewController.xib;
+			sourceTree = "<group>";
+		};
+		A8A3F261176D653C00924DCB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8A3F262176D653C00924DCB /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -277,6 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -305,6 +552,36 @@
 			};
 			name = Release;
 		};
+		A8A3F269176D653C00924DCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAlfaTest/GameAlfaTest-Prefix.pch";
+				INFOPLIST_FILE = "GameAlfaTest/GameAlfaTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A8A3F26A176D653C00924DCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameAlfaTest/GameAlfaTest-Prefix.pch";
+				INFOPLIST_FILE = "GameAlfaTest/GameAlfaTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -324,6 +601,16 @@
 				A8005594176BF8CB00C3659B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8A3F268176D653C00924DCB /* Build configuration list for PBXNativeTarget "GameAlfaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8A3F269176D653C00924DCB /* Debug */,
+				A8A3F26A176D653C00924DCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
