@@ -55,6 +55,7 @@
 		A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */; };
 		A8A4F4A61793A18E00D7013F /* IntentionDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4A51793A18E00D7013F /* IntentionDB.m */; };
 		A8A4F4AB17942CA900D7013F /* IntentionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4AA17942CA900D7013F /* IntentionTest.m */; };
+		A8ACCC8418766F5B00E6F31D /* EnlatadosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */; };
 		A8AF210D17978F840006433F /* IntentionDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4F4A51793A18E00D7013F /* IntentionDB.m */; };
 		A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E672C1179CAECA00FBCFCD /* ProjectCell.m */; };
 /* End PBXBuildFile section */
@@ -123,6 +124,8 @@
 		A8A4F4A51793A18E00D7013F /* IntentionDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntentionDB.m; path = DomainModel/IntentionDB.m; sourceTree = "<group>"; };
 		A8A4F4A917942CA900D7013F /* IntentionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntentionTest.h; sourceTree = "<group>"; };
 		A8A4F4AA17942CA900D7013F /* IntentionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionTest.m; sourceTree = "<group>"; };
+		A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadosViewController.h; sourceTree = "<group>"; };
+		A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadosViewController.m; sourceTree = "<group>"; };
 		A8E672C0179CAECA00FBCFCD /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
 		A8E672C1179CAECA00FBCFCD /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +212,8 @@
 				A800556B176BF8CB00C3659B /* Supporting Files */,
 				A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */,
 				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
+				A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */,
+				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
 				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
 				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
 			);
@@ -421,6 +426,7 @@
 				A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */,
 				A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */,
 				A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */,
+				A8ACCC8418766F5B00E6F31D /* EnlatadosViewController.m in Sources */,
 				A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
