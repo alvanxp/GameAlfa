@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0A5E1DF-B528-45AF-B0B1-567BA662883B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GameAlfa</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA08C87B-3F2B-4185-A2EA-57B695897010</key>
+		<string>https://github.com/alvanxp/GameAlfa.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GameAlfa.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA08C87B-3F2B-4185-A2EA-57B695897010</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/alvanxp/GameAlfa.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA08C87B-3F2B-4185-A2EA-57B695897010</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA08C87B-3F2B-4185-A2EA-57B695897010</string>
+			<key>IDESourceControlWCCName</key>
+			<string>GameAlfa</string>
+		</dict>
+	</array>
+</dict>
+</plist>

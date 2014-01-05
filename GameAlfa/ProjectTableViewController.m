@@ -23,7 +23,10 @@
     self = [super initWithStyle:style];
     if (self) {
         projects = [[NSMutableArray alloc] init];
+        
     }
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
     return self;
 }
 

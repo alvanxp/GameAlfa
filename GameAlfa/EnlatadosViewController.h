@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface EnlatadosViewController : UITableViewController
+{
+    NSMutableIndexSet *expandedSections;
+}
 
+@property (assign, readwrite) NSMutableArray *enlatados;
 @end

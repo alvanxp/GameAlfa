@@ -26,6 +26,8 @@
 		A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558D176BF8CB00C3659B /* SecondViewController.xib */; };
 		A800559A176C49DD00C3659B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
 		A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
+		A80A3107187919E20054C5C5 /* Enlatado.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A3106187919E20054C5C5 /* Enlatado.m */; };
+		A80A310A18791E7D0054C5C5 /* TipoEnlatado.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A310918791E7D0054C5C5 /* TipoEnlatado.m */; };
 		A8138BCB1799777F00527CDE /* Intention.m in Sources */ = {isa = PBXBuildFile; fileRef = A8138BCA1799777F00527CDE /* Intention.m */; };
 		A8138BCC1799786D00527CDE /* Intention.m in Sources */ = {isa = PBXBuildFile; fileRef = A8138BCA1799777F00527CDE /* Intention.m */; };
 		A889505E176E2F67000486DC /* ProjectDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F26D176D673B00924DCB /* ProjectDB.m */; };
@@ -87,6 +89,10 @@
 		A8005598176C49DD00C3659B /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = GameAlfa/Project.h; sourceTree = "<group>"; };
 		A8005599176C49DD00C3659B /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = GameAlfa/Project.m; sourceTree = "<group>"; };
 		A800559F176CA13100C3659B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		A80A3105187919E20054C5C5 /* Enlatado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enlatado.h; path = DomainModel/Enlatado.h; sourceTree = "<group>"; };
+		A80A3106187919E20054C5C5 /* Enlatado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Enlatado.m; path = DomainModel/Enlatado.m; sourceTree = "<group>"; };
+		A80A310818791E7D0054C5C5 /* TipoEnlatado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipoEnlatado.h; path = DomainModel/TipoEnlatado.h; sourceTree = "<group>"; };
+		A80A310918791E7D0054C5C5 /* TipoEnlatado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipoEnlatado.m; path = DomainModel/TipoEnlatado.m; sourceTree = "<group>"; };
 		A8138BC91799777F00527CDE /* Intention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intention.h; path = DomainModel/Intention.h; sourceTree = "<group>"; };
 		A8138BCA1799777F00527CDE /* Intention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intention.m; path = DomainModel/Intention.m; sourceTree = "<group>"; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
@@ -289,6 +295,10 @@
 				A89A1BB617AE94F6006B6CC6 /* Level.m */,
 				A89A1BB917AE9ED9006B6CC6 /* Step.h */,
 				A89A1BBA17AE9ED9006B6CC6 /* Step.m */,
+				A80A3105187919E20054C5C5 /* Enlatado.h */,
+				A80A3106187919E20054C5C5 /* Enlatado.m */,
+				A80A310818791E7D0054C5C5 /* TipoEnlatado.h */,
+				A80A310918791E7D0054C5C5 /* TipoEnlatado.m */,
 			);
 			name = DomainModel;
 			sourceTree = "<group>";
@@ -339,6 +349,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Alvan;
+				TargetAttributes = {
+					A800555F176BF8CB00C3659B = {
+						DevelopmentTeam = 9HAQXJ8NDY;
+					};
+				};
 			};
 			buildConfigurationList = A800555A176BF8CB00C3659B /* Build configuration list for PBXProject "GameAlfa" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -410,6 +425,7 @@
 			files = (
 				A8005571176BF8CB00C3659B /* main.m in Sources */,
 				A8005575176BF8CB00C3659B /* AppDelegate.m in Sources */,
+				A80A3107187919E20054C5C5 /* Enlatado.m in Sources */,
 				A800557E176BF8CB00C3659B /* FirstViewController.m in Sources */,
 				A8005585176BF8CB00C3659B /* SecondViewController.m in Sources */,
 				A800559A176C49DD00C3659B /* Project.m in Sources */,
@@ -428,6 +444,7 @@
 				A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */,
 				A8ACCC8418766F5B00E6F31D /* EnlatadosViewController.m in Sources */,
 				A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */,
+				A80A310A18791E7D0054C5C5 /* TipoEnlatado.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,10 +556,15 @@
 		A8005593176BF8CB00C3659B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -550,10 +572,15 @@
 		A8005594176BF8CB00C3659B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
