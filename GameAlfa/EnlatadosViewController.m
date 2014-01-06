@@ -10,6 +10,7 @@
 #import "Enlatado.h"
 #import "TipoEnlatado.h"
 #import "DTCustomColoredAccessory.h"
+#import "EnlatadoDetailViewController.h"
 @interface EnlatadosViewController ()
 
 @end
@@ -21,22 +22,6 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
-        TipoEnlatado *tipo1 = [[TipoEnlatado alloc] init];
-        tipo1.title = @"Abridores";
-        tipo1.description = @"Abrir a una nena en cualquier situacion";
-        
-        
-        Enlatado *enlatado1 = [[Enlatado alloc] init];
-        enlatado1.title = @"La dirección";
-        enlatado1.description = @"En el supermercado abordar al Target en menos de 3 segundos con la frase...";
-        
-        
-        
-        NSMutableArray *enlatadotemp = [[NSMutableArray alloc] initWithObjects:enlatado1, nil];
-        tipo1.enlatados = enlatadotemp;
-        
-        enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
         
     }
     return self;
@@ -59,6 +44,7 @@
     Enlatado *enlatado1 = [[Enlatado alloc] init];
     enlatado1.title = @"La dirección";
     enlatado1.description = @"En el supermercado abordar al Target en menos de 3 segundos con la frase...";
+    enlatado1.resume = @"Aplicable en la calle o lugar publico";
     
     
     
@@ -93,8 +79,8 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
-    //return enlatados.count;
+
+    return enlatados.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -119,17 +105,33 @@
     
     }
 
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+{
+    return NO;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    if ([[segue identifier] isEqualToString:@"showEnlatado"])
+    {
+        NSIndexPath *indexPath = [[self tableView] indexPathForSelectedRow];
+        EnlatadoDetailViewController *projectViewController = segue.destinationViewController;
+        TipoEnlatado *project = [enlatados objectAtIndex:indexPath.section];
+        int iRow = indexPath.row-1;
+        Enlatado *enlatado = [project.enlatados objectAtIndex:iRow];
+        [projectViewController setEnlatado:enlatado];
+    }
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"CellOther";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     if (cell == nil)
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     
-    
-    
-    
-    // Configure the cell...
+
     
     if ([self tableView:tableView  canCollapseSection:indexPath.section])
     {
@@ -139,7 +141,7 @@
             NSLog(@"explanable %d",indexPath.section);
             //cell.textLabel.text = @"Expandable";
             cell.textLabel.text = objectAtIndex.title;
-            
+            cell.detailTextLabel.text = objectAtIndex.description;
             if ([expandedSections containsIndex:indexPath.section])
             {
                 cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeUp];
@@ -156,6 +158,7 @@
             TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
             Enlatado *enlatado = [objectAtIndex.enlatados objectAtIndex:indexPath.row-1];
             cell.textLabel.text = enlatado.title;
+            cell.detailTextLabel.text = enlatado.resume;
             cell.accessoryView = nil;
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         }
@@ -166,6 +169,7 @@
         //cell.textLabel.text = @"normal cell";
         TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
         cell.textLabel.text = objectAtIndex.title;
+        cell.detailTextLabel.text = objectAtIndex.description;
     }
     
     return cell;
@@ -222,6 +226,11 @@
             }
             
             [self.tableView endUpdates];
+            
+        }
+        else
+        {
+            [self performSegueWithIdentifier:@"showEnlatado" sender:indexPath];
         }
     }
 }

@@ -11,6 +11,7 @@
 @interface Enlatado : NSObject
 @property (nonatomic, assign) int _id;
 @property (nonatomic,retain) NSString* title;
+@property (nonatomic,retain) NSString* resume;
 @property (nonatomic,retain) NSString* Description;
 @property (nonatomic, assign) int rating;
 @end

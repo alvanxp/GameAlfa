@@ -13,4 +13,6 @@
 @synthesize title;
 @synthesize Description;
 @synthesize rating;
+@synthesize resume;
+
 @end

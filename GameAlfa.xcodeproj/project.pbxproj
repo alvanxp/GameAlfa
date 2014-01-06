@@ -38,6 +38,7 @@
 		A8895063176E2FA6000486DC /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F24C176D607000924DCB /* FMResultSet.m */; };
 		A8895064176E2FD5000486DC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
 		A8895065176E6E04000486DC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
+		A8936740187A416300D78EBE /* EnlatadoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */; };
 		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
 		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
 		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
@@ -95,6 +96,8 @@
 		A80A310918791E7D0054C5C5 /* TipoEnlatado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipoEnlatado.m; path = DomainModel/TipoEnlatado.m; sourceTree = "<group>"; };
 		A8138BC91799777F00527CDE /* Intention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Intention.h; path = DomainModel/Intention.h; sourceTree = "<group>"; };
 		A8138BCA1799777F00527CDE /* Intention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intention.m; path = DomainModel/Intention.m; sourceTree = "<group>"; };
+		A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadoDetailViewController.h; sourceTree = "<group>"; };
+		A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadoDetailViewController.m; sourceTree = "<group>"; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
 		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
 		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
@@ -222,6 +225,8 @@
 				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
 				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
 				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
+				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
+				A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */,
 			);
 			path = GameAlfa;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 				A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */,
 				A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */,
 				A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */,
+				A8936740187A416300D78EBE /* EnlatadoDetailViewController.m in Sources */,
 				A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */,
 				A8ACCC8418766F5B00E6F31D /* EnlatadosViewController.m in Sources */,
 				A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */,
