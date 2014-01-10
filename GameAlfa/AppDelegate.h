@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 @interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+@property (strong, nonatomic) MSClient *client;
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -7,7 +7,7 @@
 //
 
 #import "EnlatadoDetailViewController.h"
-
+#import "GameAlfaService.h"
 @interface EnlatadoDetailViewController ()
 
 @end
@@ -27,7 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
     
+    
+    self.title = enlatado.title;
     self.titleLabel.text = enlatado.title;
     self.detailLabel.text = enlatado.Description;
 	// Do any additional setup after loading the view.
@@ -38,6 +41,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 - (void)dealloc {
     [_titleLabel release];

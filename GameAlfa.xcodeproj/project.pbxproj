@@ -39,6 +39,8 @@
 		A8895064176E2FD5000486DC /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
 		A8895065176E6E04000486DC /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
 		A8936740187A416300D78EBE /* EnlatadoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */; };
+		A8979812187D04330052AD1C /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */; };
+		A897B5D9187F7A81008148E6 /* GameAlfaService.m in Sources */ = {isa = PBXBuildFile; fileRef = A897B5D8187F7A81008148E6 /* GameAlfaService.m */; };
 		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
 		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
 		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
@@ -64,6 +66,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5D8D7516C314E6994D6931B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A8005560176BF8CB00C3659B /* GameAlfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameAlfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8005564176BF8CB00C3659B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8005566176BF8CB00C3659B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,9 @@
 		A8138BCA1799777F00527CDE /* Intention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Intention.m; path = DomainModel/Intention.m; sourceTree = "<group>"; };
 		A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadoDetailViewController.h; sourceTree = "<group>"; };
 		A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadoDetailViewController.m; sourceTree = "<group>"; };
+		A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		A897B5D7187F7A81008148E6 /* GameAlfaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAlfaService.h; sourceTree = "<group>"; };
+		A897B5D8187F7A81008148E6 /* GameAlfaService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAlfaService.m; sourceTree = "<group>"; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
 		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
 		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
@@ -137,6 +143,7 @@
 		A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadosViewController.m; sourceTree = "<group>"; };
 		A8E672C0179CAECA00FBCFCD /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
 		A8E672C1179CAECA00FBCFCD /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
+		F41EA67D68304F6DB73E7794 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +155,7 @@
 				A8005565176BF8CB00C3659B /* UIKit.framework in Frameworks */,
 				A8005567176BF8CB00C3659B /* Foundation.framework in Frameworks */,
 				A8005569176BF8CB00C3659B /* CoreGraphics.framework in Frameworks */,
+				A8979812187D04330052AD1C /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +183,7 @@
 				A8A3F25E176D653C00924DCB /* GameAlfaTest */,
 				A8005563176BF8CB00C3659B /* Frameworks */,
 				A8005561176BF8CB00C3659B /* Products */,
+				A5D8D7516C314E6994D6931B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,10 +199,12 @@
 		A8005563176BF8CB00C3659B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */,
 				A8005564176BF8CB00C3659B /* UIKit.framework */,
 				A8005566176BF8CB00C3659B /* Foundation.framework */,
 				A8005568176BF8CB00C3659B /* CoreGraphics.framework */,
 				A8A3F25A176D653C00924DCB /* SenTestingKit.framework */,
+				F41EA67D68304F6DB73E7794 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -223,6 +234,8 @@
 				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
 				A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */,
 				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
+				A897B5D7187F7A81008148E6 /* GameAlfaService.h */,
+				A897B5D8187F7A81008148E6 /* GameAlfaService.m */,
 				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
 				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
 				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
@@ -315,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8005592176BF8CB00C3659B /* Build configuration list for PBXNativeTarget "GameAlfa" */;
 			buildPhases = (
+				8899C0A3BE8F42468CDB5199 /* Check Pods Manifest.lock */,
 				A800555C176BF8CB00C3659B /* Sources */,
 				A800555D176BF8CB00C3659B /* Frameworks */,
 				A800555E176BF8CB00C3659B /* Resources */,
+				4E072A26AE1E4DA0B8140424 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,6 +423,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E072A26AE1E4DA0B8140424 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8899C0A3BE8F42468CDB5199 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		A8A3F257176D653C00924DCB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,6 +476,7 @@
 				A8005571176BF8CB00C3659B /* main.m in Sources */,
 				A8005575176BF8CB00C3659B /* AppDelegate.m in Sources */,
 				A80A3107187919E20054C5C5 /* Enlatado.m in Sources */,
+				A897B5D9187F7A81008148E6 /* GameAlfaService.m in Sources */,
 				A800557E176BF8CB00C3659B /* FirstViewController.m in Sources */,
 				A8005585176BF8CB00C3659B /* SecondViewController.m in Sources */,
 				A800559A176C49DD00C3659B /* Project.m in Sources */,
@@ -561,9 +607,14 @@
 		};
 		A8005593176BF8CB00C3659B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D8D7516C314E6994D6931B /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lioncarp/Desktop/GameAlfa,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
@@ -577,9 +628,14 @@
 		};
 		A8005594176BF8CB00C3659B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D8D7516C314E6994D6931B /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/lioncarp/Desktop/GameAlfa,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";

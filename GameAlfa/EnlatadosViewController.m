@@ -5,14 +5,15 @@
 //  Created by lion carp on 1/2/14.
 //  Copyright (c) 2014 Alvan. All rights reserved.
 //
-
+#import "GameAlfaService.h"
 #import "EnlatadosViewController.h"
 #import "Enlatado.h"
 #import "TipoEnlatado.h"
 #import "DTCustomColoredAccessory.h"
 #import "EnlatadoDetailViewController.h"
+#import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 @interface EnlatadosViewController ()
-
+@property (strong, nonatomic) GameAlfaService *enlatadoService;
 @end
 
 @implementation EnlatadosViewController
@@ -31,27 +32,41 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    if (!expandedSections)
-    {
-        expandedSections = [[NSMutableIndexSet alloc] init];
-    }
-    // Custom initialization
-    TipoEnlatado *tipo1 = [[TipoEnlatado alloc] init];
-    tipo1.title = @"Abridores";
-    tipo1.description = @"Abrir a una nena en cualquier situacion";
-    
-    
+    self.enlatadoService = [[GameAlfaService alloc]init];
     Enlatado *enlatado1 = [[Enlatado alloc] init];
     enlatado1.title = @"La dirección";
     enlatado1.description = @"En el supermercado abordar al Target en menos de 3 segundos con la frase...";
     enlatado1.resume = @"Aplicable en la calle o lugar publico";
+
+    //NSDictionary *item = @{ @"title" : enlatado1.title, @"description" : enlatado1.Description, @"resume": enlatado1.resume };
+    //[self.enlatadoService addItem:item completion:^(NSUInteger index){
+    //    NSLog(@"Inserted enlatado");
+    //}];
     
-    
-    
-    NSMutableArray *enlatadotemp = [[NSMutableArray alloc] initWithObjects:enlatado1, nil];
-    tipo1.enlatados = enlatadotemp;
-    
-    enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
+    [self.enlatadoService refreshDataOnSuccess:^{
+        //self.enlatados = self.enlatadoService.enlatados;
+        
+        
+        // Custom initialization
+        TipoEnlatado *tipo1 = [[TipoEnlatado alloc] init];
+        tipo1.title = @"Abridores";
+        tipo1.description = @"Abrir a una nena en cualquier situacion";
+        
+        
+        
+        
+        
+        //NSMutableArray *enlatadotemp = [[NSMutableArray alloc] initWithObjects:enlatado1, nil];
+        tipo1.enlatados = self.enlatadoService.enlatados;
+        
+        enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
+        [self.tableView reloadData];
+    }];
+    if (!expandedSections)
+    {
+        expandedSections = [[NSMutableIndexSet alloc] init];
+    }
+
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -177,7 +192,6 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //tableView.can
     if ([self tableView:tableView canCollapseSection:indexPath.section])
     {
         if (!indexPath.row)

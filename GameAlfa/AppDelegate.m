@@ -20,6 +20,7 @@
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                           [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, shadow, NSShadowAttributeName, [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    self.client = [MSClient clientWithApplicationURLString:@"https://gamealfa.azure-mobile.net/" applicationKey:@"YVDcMAHRYdiquUdaQzYNOTNKcMLUFb50"];
     return YES;
 }
 
