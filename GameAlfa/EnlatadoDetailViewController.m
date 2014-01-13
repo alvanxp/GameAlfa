@@ -27,13 +27,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    
-    
     self.title = enlatado.title;
     self.titleLabel.text = enlatado.title;
-    self.detailLabel.text = enlatado.Description;
+    self.detailLabel.text = enlatado.description;
+   // CGRect frame = self.view.frame;
+    //frame.size.height = frame.size.height - self.titleLabel.frame.size.height;
+    
+    [self.detailLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
+    //self.detailLabel.frame = frame;
+    [self.detailLabel sizeToFit];
+    //self.detailLabel.used
 	// Do any additional setup after loading the view.
+    [self contentSizeRectForTextView:self.detailLabel];
+}
+
+
+- (CGRect)contentSizeRectForTextView:(UITextView *)textView
+{
+    [textView.layoutManager ensureLayoutForTextContainer:textView.textContainer];
+    CGRect textBounds = [textView.layoutManager usedRectForTextContainer:textView.textContainer];
+    CGFloat width =  (CGFloat)ceil(textBounds.size.width + textView.textContainerInset.left + textView.textContainerInset.right);
+    CGFloat height = (CGFloat)ceil(textBounds.size.height + textView.textContainerInset.top + textView.textContainerInset.bottom);
+    return CGRectMake(0, 0, width, height);
 }
 
 - (void)didReceiveMemoryWarning

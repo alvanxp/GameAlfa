@@ -10,7 +10,12 @@
 #import "Enlatado.h"
 
 @interface EnlatadoDetailViewController : UIViewController
-@property (retain, nonatomic) IBOutlet UILabel *detailLabel;
+//@property (retain, nonatomic) IBOutlet UILabel *detailLabel;
+//@property (retain, nonatomic) IBOutlet UITextView *titleLabel;
+//@property (retain, nonatomic) IBOutlet UITextView *detailLabel;
+@property (retain, nonatomic) IBOutlet UITextView *detailLabel;
 @property (retain, nonatomic) IBOutlet UILabel *titleLabel;
+//@property (retain, nonatomic) IBOutlet UITextView *titleLabel;
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *loadingView;
 @property (nonatomic,retain) Enlatado* enlatado;
 @end

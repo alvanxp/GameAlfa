@@ -13,5 +13,6 @@
     NSMutableIndexSet *expandedSections;
 }
 
-@property (assign, readwrite) NSMutableArray *enlatados;
+@property (retain, nonatomic) IBOutlet UIActivityIndicatorView *loadingView;
+@property (retain, readwrite) NSMutableArray *enlatados;
 @end

@@ -11,7 +11,7 @@
 @implementation Enlatado
 @synthesize _id;
 @synthesize title;
-@synthesize Description;
+@synthesize description;
 @synthesize rating;
 @synthesize resume;
 

@@ -42,31 +42,26 @@
     //[self.enlatadoService addItem:item completion:^(NSUInteger index){
     //    NSLog(@"Inserted enlatado");
     //}];
-    
-    [self.enlatadoService refreshDataOnSuccess:^{
-        //self.enlatados = self.enlatadoService.enlatados;
-        
-        
+    NSLog(@"Starting to retrieve data");
+    [self.enlatadoService retrieveEnlatados:^(NSArray *items) {
         // Custom initialization
         TipoEnlatado *tipo1 = [[TipoEnlatado alloc] init];
         tipo1.title = @"Abridores";
         tipo1.description = @"Abrir a una nena en cualquier situacion";
         
-        
-        
-        
-        
         //NSMutableArray *enlatadotemp = [[NSMutableArray alloc] initWithObjects:enlatado1, nil];
-        tipo1.enlatados = self.enlatadoService.enlatados;
+        tipo1.enlatados = items;
         
-        enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
-        [self.tableView reloadData];
-    }];
-    if (!expandedSections)
-    {
-        expandedSections = [[NSMutableIndexSet alloc] init];
-    }
+        self.enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
+        if (!expandedSections)
+        {
+            expandedSections = [[NSMutableIndexSet alloc] init];
+        }
 
+        //[self.tableView reloadData];
+        NSLog(@"Data loaded , Numero de enlatados %i", tipo1.enlatados.count);
+    }];
+   
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -95,7 +90,7 @@
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
 
-    return enlatados.count;
+    return self.enlatados.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -104,8 +99,8 @@
     if ([self tableView:tableView canCollapseSection:section])
     {
         if ([expandedSections containsIndex:section])
-        {
-            TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:section];
+        { 
+            TipoEnlatado *objectAtIndex = [self.enlatados objectAtIndex:section];
             return objectAtIndex.enlatados.count+1;
             // return rows when expanded
         }
@@ -143,48 +138,54 @@
 {
     static NSString *CellIdentifier = @"CellOther";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    if (cell == nil)
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    
-
-    
-    if ([self tableView:tableView  canCollapseSection:indexPath.section])
-    {
-        if (!indexPath.row)
+    @try {
+        if (cell == nil)
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        
+        
+        
+        if ([self tableView:tableView  canCollapseSection:indexPath.section])
         {
-            TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
-            NSLog(@"explanable %d",indexPath.section);
-            //cell.textLabel.text = @"Expandable";
-            cell.textLabel.text = objectAtIndex.title;
-            cell.detailTextLabel.text = objectAtIndex.description;
-            if ([expandedSections containsIndex:indexPath.section])
+            if (!indexPath.row)
             {
-                cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeUp];
+                TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
+                NSLog(@"explanable %d",indexPath.section);
+                //cell.textLabel.text = @"Expandable";
+                cell.textLabel.text = objectAtIndex.title;
+                cell.detailTextLabel.text = objectAtIndex.description;
+                if ([expandedSections containsIndex:indexPath.section])
+                {
+                    cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeUp];
+                }
+                else
+                {
+                    cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeDown];
+                }
             }
             else
             {
-                cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeDown];
+                //cell.textLabel.text = @"Some Detail";
+                NSLog(@"detail %d rows %d",indexPath.section, indexPath.row);
+                TipoEnlatado *objectAtIndex = [self.enlatados objectAtIndex:indexPath.section];
+                Enlatado *enlatado = [objectAtIndex.enlatados objectAtIndex:indexPath.row-1];
+                cell.textLabel.text = enlatado.title;
+                cell.detailTextLabel.text = enlatado.resume;
+                cell.accessoryView = nil;
+                cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
             }
         }
         else
         {
-            //cell.textLabel.text = @"Some Detail";
-            NSLog(@"detail %d rows %d",indexPath.section, indexPath.row);
-            TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
-            Enlatado *enlatado = [objectAtIndex.enlatados objectAtIndex:indexPath.row-1];
-            cell.textLabel.text = enlatado.title;
-            cell.detailTextLabel.text = enlatado.resume;
             cell.accessoryView = nil;
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+            //cell.textLabel.text = @"normal cell";
+            TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
+            cell.textLabel.text = objectAtIndex.title;
+            cell.detailTextLabel.text = objectAtIndex.description;
         }
+
     }
-    else
-    {
-        cell.accessoryView = nil;
-        //cell.textLabel.text = @"normal cell";
-        TipoEnlatado *objectAtIndex = [enlatados objectAtIndex:indexPath.section];
-        cell.textLabel.text = objectAtIndex.title;
-        cell.detailTextLabel.text = objectAtIndex.description;
+    @catch (NSException *exception) {
+        NSLog(exception.reason);
     }
     
     return cell;
@@ -302,4 +303,8 @@
 
  */
 
+- (void)dealloc {
+    [_loadingView release];
+    [super dealloc];
+}
 @end

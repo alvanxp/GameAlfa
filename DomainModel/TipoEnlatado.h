@@ -12,5 +12,5 @@
 @property (nonatomic, assign) int _id;
 @property (nonatomic,retain) NSString* title;
 @property (nonatomic,retain) NSString* description;
-@property (nonatomic, assign) NSMutableArray* enlatados;
+@property (nonatomic, retain) NSArray* enlatados;
 @end

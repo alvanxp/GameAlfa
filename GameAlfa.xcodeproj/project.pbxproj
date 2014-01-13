@@ -41,6 +41,10 @@
 		A8936740187A416300D78EBE /* EnlatadoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */; };
 		A8979812187D04330052AD1C /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */; };
 		A897B5D9187F7A81008148E6 /* GameAlfaService.m in Sources */ = {isa = PBXBuildFile; fileRef = A897B5D8187F7A81008148E6 /* GameAlfaService.m */; };
+		A897C9AB188357F200728744 /* EnlatadoDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9AA188357F200728744 /* EnlatadoDB.m */; };
+		A897C9AE1883628C00728744 /* CacheManagerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9AD1883628C00728744 /* CacheManagerDB.m */; };
+		A897C9B11883634700728744 /* CacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9B01883634700728744 /* CacheEntity.m */; };
+		A897C9B41883803D00728744 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9B31883803D00728744 /* CacheManager.m */; };
 		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
 		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
 		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
@@ -102,8 +106,16 @@
 		A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadoDetailViewController.h; sourceTree = "<group>"; };
 		A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadoDetailViewController.m; sourceTree = "<group>"; };
 		A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
-		A897B5D7187F7A81008148E6 /* GameAlfaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameAlfaService.h; sourceTree = "<group>"; };
-		A897B5D8187F7A81008148E6 /* GameAlfaService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameAlfaService.m; sourceTree = "<group>"; };
+		A897B5D7187F7A81008148E6 /* GameAlfaService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameAlfaService.h; path = GameAlfa/GameAlfaService.h; sourceTree = "<group>"; };
+		A897B5D8187F7A81008148E6 /* GameAlfaService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameAlfaService.m; path = GameAlfa/GameAlfaService.m; sourceTree = "<group>"; };
+		A897C9A9188357F200728744 /* EnlatadoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadoDB.h; sourceTree = "<group>"; };
+		A897C9AA188357F200728744 /* EnlatadoDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadoDB.m; sourceTree = "<group>"; };
+		A897C9AC1883628C00728744 /* CacheManagerDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManagerDB.h; sourceTree = "<group>"; };
+		A897C9AD1883628C00728744 /* CacheManagerDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManagerDB.m; sourceTree = "<group>"; };
+		A897C9AF1883634700728744 /* CacheEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheEntity.h; path = DomainModel/CacheEntity.h; sourceTree = "<group>"; };
+		A897C9B01883634700728744 /* CacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheEntity.m; path = DomainModel/CacheEntity.m; sourceTree = "<group>"; };
+		A897C9B21883803D00728744 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = DomainModel/CacheManager.h; sourceTree = "<group>"; };
+		A897C9B31883803D00728744 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = DomainModel/CacheManager.m; sourceTree = "<group>"; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
 		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
 		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
@@ -234,8 +246,6 @@
 				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
 				A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */,
 				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
-				A897B5D7187F7A81008148E6 /* GameAlfaService.h */,
-				A897B5D8187F7A81008148E6 /* GameAlfaService.m */,
 				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
 				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
 				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
@@ -301,6 +311,8 @@
 		A8A3F26B176D656000924DCB /* DomainModel */ = {
 			isa = PBXGroup;
 			children = (
+				A897B5D7187F7A81008148E6 /* GameAlfaService.h */,
+				A897B5D8187F7A81008148E6 /* GameAlfaService.m */,
 				A8005599176C49DD00C3659B /* Project.m */,
 				A8005598176C49DD00C3659B /* Project.h */,
 				A8A3F26C176D673B00924DCB /* ProjectDB.h */,
@@ -314,9 +326,17 @@
 				A89A1BB917AE9ED9006B6CC6 /* Step.h */,
 				A89A1BBA17AE9ED9006B6CC6 /* Step.m */,
 				A80A3105187919E20054C5C5 /* Enlatado.h */,
+				A897C9A9188357F200728744 /* EnlatadoDB.h */,
+				A897C9AA188357F200728744 /* EnlatadoDB.m */,
 				A80A3106187919E20054C5C5 /* Enlatado.m */,
 				A80A310818791E7D0054C5C5 /* TipoEnlatado.h */,
 				A80A310918791E7D0054C5C5 /* TipoEnlatado.m */,
+				A897C9AC1883628C00728744 /* CacheManagerDB.h */,
+				A897C9B21883803D00728744 /* CacheManager.h */,
+				A897C9B31883803D00728744 /* CacheManager.m */,
+				A897C9AD1883628C00728744 /* CacheManagerDB.m */,
+				A897C9AF1883634700728744 /* CacheEntity.h */,
+				A897C9B01883634700728744 /* CacheEntity.m */,
 			);
 			name = DomainModel;
 			sourceTree = "<group>";
@@ -487,15 +507,19 @@
 				A8A3F252176D607000924DCB /* FMResultSet.m in Sources */,
 				A8A3F26E176D673B00924DCB /* ProjectDB.m in Sources */,
 				A8A4F4A61793A18E00D7013F /* IntentionDB.m in Sources */,
+				A897C9AB188357F200728744 /* EnlatadoDB.m in Sources */,
 				A8138BCB1799777F00527CDE /* Intention.m in Sources */,
+				A897C9B41883803D00728744 /* CacheManager.m in Sources */,
 				A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */,
 				A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */,
 				A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */,
 				A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */,
 				A8936740187A416300D78EBE /* EnlatadoDetailViewController.m in Sources */,
 				A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */,
+				A897C9B11883634700728744 /* CacheEntity.m in Sources */,
 				A8ACCC8418766F5B00E6F31D /* EnlatadosViewController.m in Sources */,
 				A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */,
+				A897C9AE1883628C00728744 /* CacheManagerDB.m in Sources */,
 				A80A310A18791E7D0054C5C5 /* TipoEnlatado.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

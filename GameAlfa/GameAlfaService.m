@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Alvan. All rights reserved.
 //
 #import "Enlatado.h"
+#import "CacheManager.h"
 #import "GameAlfaService.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 
@@ -47,6 +48,47 @@
     return self;
 }
 
+- (void) retrieveEnlatados:(completionEnlatados)completion
+{
+   
+    CacheEntity *cacheManager = [[[CacheManager sharedInstance] entityManager] getCacheManagerByName:@"ENLATADO"];
+    if (cacheManager) {
+        NSArray *result=nil;
+        result = [[[CacheManager sharedInstance] enlatadoManager] getEnlatados];
+        completion(result);
+        
+    }else
+    {
+        [self.enlatadoTable readWithCompletion:^(NSArray *items, NSInteger totalCount, NSError *error) {
+            if (error){
+                NSLog(@"ERROR %@", error);
+                completion(NULL);
+            }else
+            {
+                CacheEntity *newCacheManager = [[CacheEntity alloc] init];
+                newCacheManager.entity = @"ENLATADO";
+                int idEntity = [[[CacheManager sharedInstance] entityManager] AddNewCacheManagerItem:
+                                newCacheManager];
+                NSArray *result=nil;
+                NSMutableArray *tempResult = [[NSMutableArray alloc]init];
+                for (NSDictionary *item in items) {
+                    Enlatado *enlatado = [[Enlatado alloc] init];
+                    enlatado.title =[item objectForKey:@"title"];
+                    enlatado.description =[item objectForKey:@"description"];
+                    enlatado.resume = [item objectForKey:@"resume"];
+                    enlatado.rating = [item objectForKey:@"rating"];
+                    [tempResult addObject:enlatado];
+                    [[[CacheManager sharedInstance] enlatadoManager] AddNewEnlatado:enlatado];
+                }
+                result = [NSArray arrayWithArray:tempResult];
+                
+                completion(result);
+                // result = [[NSArray alloc] initWithArray:tempEnlatados];
+            }
+        }];
+    }
+}
+
 - (void) refreshDataOnSuccess:(completionBlock)completion
 {
     // TODO
@@ -55,21 +97,7 @@
     
     // TODO
     // Query the TodoItem table and update the items property with the results from the service
-    [self.enlatadoTable readWithCompletion:^(NSArray *items, NSInteger totalCount, NSError *error) {
-        if (error){
-            NSLog(@"ERROR %@", error);
-        }else
-        {
-            for (NSDictionary *item in items) {
-                Enlatado *enlatado = [[Enlatado alloc] init];
-                enlatado.title =[item objectForKey:@"title"];
-                enlatado.Description =[item objectForKey:@"description"];
-                enlatado.resume = [item objectForKey:@"resume"];
-                enlatado.rating = [item objectForKey:@"rating"];
-                [enlatados addObject:enlatado];
-            }
-        }
-    }];
+    
 
     
     completion();

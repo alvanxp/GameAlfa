@@ -12,7 +12,7 @@
 
 #pragma mark * Block Definitions
 
-
+typedef void (^completionEnlatados) (NSArray *enlatados);
 typedef void (^completionBlock) ();
 typedef void (^completionWithIndexBlock) (NSUInteger index);
 typedef void (^busyUpdateBlock) (BOOL busy);
@@ -26,6 +26,8 @@ typedef void (^busyUpdateBlock) (BOOL busy);
 
 @property (nonatomic, strong)   NSMutableArray *enlatados;
 // TODO - create an MSClient proeprty
+
+-(void) retrieveEnlatados:(completionEnlatados) completion;
 
 - (void) refreshDataOnSuccess:(completionBlock) completion;
 
