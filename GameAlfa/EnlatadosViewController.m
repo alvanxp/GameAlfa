@@ -38,18 +38,14 @@
     enlatado1.description = @"En el supermercado abordar al Target en menos de 3 segundos con la frase...";
     enlatado1.resume = @"Aplicable en la calle o lugar publico";
 
-    //NSDictionary *item = @{ @"title" : enlatado1.title, @"description" : enlatado1.Description, @"resume": enlatado1.resume };
-    //[self.enlatadoService addItem:item completion:^(NSUInteger index){
-    //    NSLog(@"Inserted enlatado");
-    //}];
     NSLog(@"Starting to retrieve data");
+    [self.loadingView startAnimating];
     [self.enlatadoService retrieveEnlatados:^(NSArray *items) {
-        // Custom initialization
+        
         TipoEnlatado *tipo1 = [[TipoEnlatado alloc] init];
         tipo1.title = @"Abridores";
         tipo1.description = @"Abrir a una nena en cualquier situacion";
         
-        //NSMutableArray *enlatadotemp = [[NSMutableArray alloc] initWithObjects:enlatado1, nil];
         tipo1.enlatados = items;
         
         self.enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
@@ -58,16 +54,10 @@
             expandedSections = [[NSMutableIndexSet alloc] init];
         }
 
-        //[self.tableView reloadData];
+        [self.tableView reloadData];
         NSLog(@"Data loaded , Numero de enlatados %i", tipo1.enlatados.count);
+        [self.loadingView stopAnimating];
     }];
-   
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning

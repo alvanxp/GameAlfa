@@ -13,4 +13,5 @@
 -(BOOL) CreateTable;
 -(int) AddNewCacheManagerItem:(CacheEntity *)cacheManager;
 -(CacheEntity*) getCacheManagerByName:(NSString *)name;
+-(void) DeleteItem:(NSString *) entity;
 @end

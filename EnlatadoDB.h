@@ -15,4 +15,5 @@
 -(int) AddNewEnlatado:(Enlatado*) enlatado;
 -(Enlatado*) getEnlatado:(int) enlatadoId;
 -(NSArray*) getEnlatados;
+-(void) deleteItems;
 @end

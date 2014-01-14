@@ -52,11 +52,15 @@
 {
    
     CacheEntity *cacheManager = [[[CacheManager sharedInstance] entityManager] getCacheManagerByName:@"ENLATADO"];
-    if (cacheManager) {
-        NSArray *result=nil;
-        result = [[[CacheManager sharedInstance] enlatadoManager] getEnlatados];
-        completion(result);
-        
+    
+    
+    
+    
+    if ((cacheManager != nil) && ((int)[cacheManager.expirationDate timeIntervalSinceNow] >0))
+    {
+            NSArray *result=nil;
+            result = [[[CacheManager sharedInstance] enlatadoManager] getEnlatados];
+            completion(result);
     }else
     {
         [self.enlatadoTable readWithCompletion:^(NSArray *items, NSInteger totalCount, NSError *error) {
@@ -65,8 +69,13 @@
                 completion(NULL);
             }else
             {
+                [[[CacheManager sharedInstance] entityManager] DeleteItem:@"ENLATADO"];
+                [[[CacheManager sharedInstance] enlatadoManager] deleteItems];
+                
                 CacheEntity *newCacheManager = [[CacheEntity alloc] init];
                 newCacheManager.entity = @"ENLATADO";
+                newCacheManager.downloadDate = [NSDate date];
+                newCacheManager.expirationDate = [newCacheManager.downloadDate dateByAddingTimeInterval:(5*60)];
                 int idEntity = [[[CacheManager sharedInstance] entityManager] AddNewCacheManagerItem:
                                 newCacheManager];
                 NSArray *result=nil;
@@ -88,6 +97,8 @@
         }];
     }
 }
+
+
 
 - (void) refreshDataOnSuccess:(completionBlock)completion
 {

@@ -40,6 +40,50 @@
     
 }
 
+-(void) deleteItems
+{
+    int resultId = -1;
+    @try {
+        NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+        NSString *documentsDir = [docPaths objectAtIndex:0];
+        NSString *dbPath = [documentsDir   stringByAppendingPathComponent:@"GameAlfa.sqlite"];
+        
+        FMDatabase *database = [FMDatabase databaseWithPath:dbPath];
+        [database open];
+        [database beginTransaction];
+        [database executeUpdate:@"DELETE FROM Enlatado", nil];
+        
+        NSLog(@"Err %d: %@", [database lastErrorCode], [database lastErrorMessage]);
+        [database commit];
+        [database close];
+    }
+    @catch (NSException *exception) {
+        //   return resultId;
+    }
+}
+
+-(void) DeleteItem:(NSString *)entity
+{
+    int resultId = -1;
+    @try {
+        NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+        NSString *documentsDir = [docPaths objectAtIndex:0];
+        NSString *dbPath = [documentsDir   stringByAppendingPathComponent:@"GameAlfa.sqlite"];
+        
+        FMDatabase *database = [FMDatabase databaseWithPath:dbPath];
+        [database open];
+        [database beginTransaction];
+        [database executeUpdate:@"DELETE FROM CacheEntity ", nil];
+        
+        NSLog(@"Err %d: %@", [database lastErrorCode], [database lastErrorMessage]);
+        [database commit];
+        [database close];
+    }
+    @catch (NSException *exception) {
+        //   return resultId;
+    }
+}
+
 -(int)AddNewEnlatado:(Enlatado *)enlatado
 {
     int resultId = -1;

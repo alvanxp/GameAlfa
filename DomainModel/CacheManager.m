@@ -11,8 +11,8 @@
 #import "EnlatadoDB.h"
 @implementation CacheManager
 static CacheManager *sharedInstance = nil;
-CacheEntity *cacheEntity = nil;
-CacheEntity *enlatadoManager = nil;
+CacheManagerDB *cacheEntity = nil;
+EnlatadoDB *enlatadoManager = nil;
 
 +(CacheManager *)sharedInstance{
     
