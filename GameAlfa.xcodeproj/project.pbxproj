@@ -45,6 +45,8 @@
 		A897C9AE1883628C00728744 /* CacheManagerDB.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9AD1883628C00728744 /* CacheManagerDB.m */; };
 		A897C9B11883634700728744 /* CacheEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9B01883634700728744 /* CacheEntity.m */; };
 		A897C9B41883803D00728744 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A897C9B31883803D00728744 /* CacheManager.m */; };
+		A89809641884F3FE00675FCF /* CircularButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A89809631884F3FE00675FCF /* CircularButton.m */; };
+		A8980966188508BC00675FCF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8980965188508BC00675FCF /* QuartzCore.framework */; };
 		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
 		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
 		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
@@ -116,6 +118,9 @@
 		A897C9B01883634700728744 /* CacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheEntity.m; path = DomainModel/CacheEntity.m; sourceTree = "<group>"; };
 		A897C9B21883803D00728744 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = DomainModel/CacheManager.h; sourceTree = "<group>"; };
 		A897C9B31883803D00728744 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = DomainModel/CacheManager.m; sourceTree = "<group>"; };
+		A89809621884F3FE00675FCF /* CircularButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularButton.h; sourceTree = "<group>"; };
+		A89809631884F3FE00675FCF /* CircularButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularButton.m; sourceTree = "<group>"; };
+		A8980965188508BC00675FCF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
 		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
 		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
@@ -163,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8980966188508BC00675FCF /* QuartzCore.framework in Frameworks */,
 				A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */,
 				A8005565176BF8CB00C3659B /* UIKit.framework in Frameworks */,
 				A8005567176BF8CB00C3659B /* Foundation.framework in Frameworks */,
@@ -211,6 +217,7 @@
 		A8005563176BF8CB00C3659B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A8980965188508BC00675FCF /* QuartzCore.framework */,
 				A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */,
 				A8005564176BF8CB00C3659B /* UIKit.framework */,
 				A8005566176BF8CB00C3659B /* Foundation.framework */,
@@ -229,6 +236,7 @@
 				A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */,
 				A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */,
 				A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */,
+				A800558A176BF8CB00C3659B /* FirstViewController.xib */,
 				A8005573176BF8CB00C3659B /* AppDelegate.h */,
 				A8005574176BF8CB00C3659B /* AppDelegate.m */,
 				A800557C176BF8CB00C3659B /* FirstViewController.h */,
@@ -239,7 +247,6 @@
 				A8005584176BF8CB00C3659B /* SecondViewController.m */,
 				A8005586176BF8CB00C3659B /* second.png */,
 				A8005588176BF8CB00C3659B /* second@2x.png */,
-				A800558A176BF8CB00C3659B /* FirstViewController.xib */,
 				A800558D176BF8CB00C3659B /* SecondViewController.xib */,
 				A800556B176BF8CB00C3659B /* Supporting Files */,
 				A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */,
@@ -250,6 +257,8 @@
 				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
 				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
 				A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */,
+				A89809621884F3FE00675FCF /* CircularButton.h */,
+				A89809631884F3FE00675FCF /* CircularButton.m */,
 			);
 			path = GameAlfa;
 			sourceTree = "<group>";
@@ -422,10 +431,10 @@
 				A8005577176BF8CB00C3659B /* Default.png in Resources */,
 				A8005579176BF8CB00C3659B /* Default@2x.png in Resources */,
 				A800557B176BF8CB00C3659B /* Default-568h@2x.png in Resources */,
+				A8005589176BF8CB00C3659B /* second@2x.png in Resources */,
 				A8005580176BF8CB00C3659B /* first.png in Resources */,
 				A8005582176BF8CB00C3659B /* first@2x.png in Resources */,
 				A8005587176BF8CB00C3659B /* second.png in Resources */,
-				A8005589176BF8CB00C3659B /* second@2x.png in Resources */,
 				A800558C176BF8CB00C3659B /* FirstViewController.xib in Resources */,
 				A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */,
 				A89E4DF4179B7AC5008D091B /* MainStoryBoard.storyboard in Resources */,
@@ -511,6 +520,7 @@
 				A8138BCB1799777F00527CDE /* Intention.m in Sources */,
 				A897C9B41883803D00728744 /* CacheManager.m in Sources */,
 				A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */,
+				A89809641884F3FE00675FCF /* CircularButton.m in Sources */,
 				A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */,
 				A8A43A7617A77B580079E766 /* ProjectDetailViewController.m in Sources */,
 				A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */,
@@ -641,6 +651,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					Vendor/SSToolkit,
+				);
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +677,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GameAlfa/GameAlfa-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/AFNetworking\"",
+					Vendor/SSToolkit,
+				);
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";

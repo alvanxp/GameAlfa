@@ -9,7 +9,7 @@
 #import "CacheManager.h"
 #import "GameAlfaService.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
-
+#include <stdlib.h>
 
 #pragma mark * Private interace
 
@@ -23,6 +23,7 @@
 @property (nonatomic)           NSInteger busyCount;
 
 
+
 @end
 
 
@@ -30,8 +31,15 @@
 
 
 @implementation GameAlfaService
-
+static GameAlfaService *gameAlfaInstance=nil;
 @synthesize enlatados;
+
++(GameAlfaService *)sharedInstance{
+    
+    if (gameAlfaInstance == nil)
+        gameAlfaInstance = [[super allocWithZone:NULL] init];
+    return gameAlfaInstance;
+}
 
 -(GameAlfaService *) init
 {
@@ -46,6 +54,17 @@
     self.busyCount = 0;
     
     return self;
+}
+
+
+-(void) retrieveEnlatado:(completionEnlatado)completion
+{
+    [self retrieveEnlatados:^(NSArray *enlatados) {
+        int count = enlatados.count;
+        int r=arc4random_uniform(count);
+        Enlatado *result = [enlatados objectAtIndex:r];
+        completion(result);
+    }];
 }
 
 - (void) retrieveEnlatados:(completionEnlatados)completion

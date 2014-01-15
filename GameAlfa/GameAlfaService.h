@@ -8,7 +8,8 @@
 
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 #import <Foundation/Foundation.h>
-
+#import "Enlatado.h"
+#import "GameAlfaService.h"
 
 #pragma mark * Block Definitions
 
@@ -16,7 +17,7 @@ typedef void (^completionEnlatados) (NSArray *enlatados);
 typedef void (^completionBlock) ();
 typedef void (^completionWithIndexBlock) (NSUInteger index);
 typedef void (^busyUpdateBlock) (BOOL busy);
-
+typedef void (^completionEnlatado) (Enlatado *enlatado);
 
 #pragma mark * TodoService public interface
 
@@ -26,6 +27,7 @@ typedef void (^busyUpdateBlock) (BOOL busy);
 
 @property (nonatomic, strong)   NSMutableArray *enlatados;
 // TODO - create an MSClient proeprty
+-(void) retrieveEnlatado:(completionEnlatado) completion;
 
 -(void) retrieveEnlatados:(completionEnlatados) completion;
 
@@ -37,6 +39,7 @@ typedef void (^busyUpdateBlock) (BOOL busy);
 - (void) completeItem: (NSDictionary *) item
            completion:(completionWithIndexBlock) completion;
 
++(GameAlfaService *)sharedInstance;
 //- (NSMutableArray*) getItems;
 
 @end
