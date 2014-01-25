@@ -14,10 +14,10 @@
             buildForProfiling = "YES">
             <BuildableReference
                ReferencedContainer = "container:Pods.xcodeproj"
-               BlueprintIdentifier = "2578BC9A24174E618074767A"
+               BlueprintIdentifier = "8E13B0B0203F4A2A948D9223"
                BuildableIdentifier = "primary"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods">
+               BuildableName = "libPods-TTTAttributedLabel.a"
+               BlueprintName = "Pods-TTTAttributedLabel">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

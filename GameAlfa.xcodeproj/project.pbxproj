@@ -16,14 +16,12 @@
 		A8005577176BF8CB00C3659B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005576176BF8CB00C3659B /* Default.png */; };
 		A8005579176BF8CB00C3659B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005578176BF8CB00C3659B /* Default@2x.png */; };
 		A800557B176BF8CB00C3659B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A800557A176BF8CB00C3659B /* Default-568h@2x.png */; };
-		A800557E176BF8CB00C3659B /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A800557D176BF8CB00C3659B /* FirstViewController.m */; };
+		A800557E176BF8CB00C3659B /* ThreeSecondsRuleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A800557D176BF8CB00C3659B /* ThreeSecondsRuleController.m */; };
 		A8005580176BF8CB00C3659B /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = A800557F176BF8CB00C3659B /* first.png */; };
 		A8005582176BF8CB00C3659B /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005581176BF8CB00C3659B /* first@2x.png */; };
-		A8005585176BF8CB00C3659B /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005584176BF8CB00C3659B /* SecondViewController.m */; };
 		A8005587176BF8CB00C3659B /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005586176BF8CB00C3659B /* second.png */; };
 		A8005589176BF8CB00C3659B /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A8005588176BF8CB00C3659B /* second@2x.png */; };
-		A800558C176BF8CB00C3659B /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558A176BF8CB00C3659B /* FirstViewController.xib */; };
-		A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558D176BF8CB00C3659B /* SecondViewController.xib */; };
+		A800558C176BF8CB00C3659B /* ThreeSecondsRuleController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A800558A176BF8CB00C3659B /* ThreeSecondsRuleController.xib */; };
 		A800559A176C49DD00C3659B /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A8005599176C49DD00C3659B /* Project.m */; };
 		A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A800559F176CA13100C3659B /* libsqlite3.0.dylib */; };
 		A80A3107187919E20054C5C5 /* Enlatado.m in Sources */ = {isa = PBXBuildFile; fileRef = A80A3106187919E20054C5C5 /* Enlatado.m */; };
@@ -49,9 +47,14 @@
 		A8980966188508BC00675FCF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8980965188508BC00675FCF /* QuartzCore.framework */; };
 		A89A1BB717AE94F6006B6CC6 /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BB617AE94F6006B6CC6 /* Level.m */; };
 		A89A1BBB17AE9ED9006B6CC6 /* Step.m in Sources */ = {isa = PBXBuildFile; fileRef = A89A1BBA17AE9ED9006B6CC6 /* Step.m */; };
+		A89B931A1888E34100D24760 /* libSSToolkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A89B93101888E2D100D24760 /* libSSToolkit.a */; };
+		A89B931C1888E38300D24760 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A89B931B1888E38300D24760 /* MessageUI.framework */; };
+		A89B931D1888E3C700D24760 /* SSToolkitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A89B93141888E2D100D24760 /* SSToolkitResources.bundle */; };
 		A89E4DF1179B7A11008D091B /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */; };
 		A89E4DF4179B7AC5008D091B /* MainStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */; };
 		A89EB32117AF256A001E074A /* DTCustomColoredAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */; };
+		A8A13E9A1886C2DD0038BFB4 /* SyntaxHighlightTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13E991886C2DD0038BFB4 /* SyntaxHighlightTextStorage.m */; };
+		A8A20047188E119400EF7C3C /* Body.html in Resources */ = {isa = PBXBuildFile; fileRef = A8A20046188E119400EF7C3C /* Body.html */; };
 		A8A3F24D176D607000924DCB /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F243176D607000924DCB /* FMDatabase.m */; };
 		A8A3F24E176D607000924DCB /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F245176D607000924DCB /* FMDatabaseAdditions.m */; };
 		A8A3F24F176D607000924DCB /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A3F247176D607000924DCB /* FMDatabasePool.m */; };
@@ -71,6 +74,44 @@
 		A8E672C2179CAECA00FBCFCD /* ProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E672C1179CAECA00FBCFCD /* ProjectCell.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A89B930F1888E2D100D24760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = SSToolkit;
+		};
+		A89B93111888E2D100D24760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B239101D1357DC3E00ADE21B;
+			remoteInfo = SSToolkitTests;
+		};
+		A89B93131888E2D100D24760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2C507EA151BA64400E94614;
+			remoteInfo = SSToolkitResources;
+		};
+		A89B93161888E32800D24760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = SSToolkit;
+		};
+		A89B93181888E32800D24760 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C507E9151BA64400E94614;
+			remoteInfo = SSToolkitResources;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A5D8D7516C314E6994D6931B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A8005560176BF8CB00C3659B /* GameAlfa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameAlfa.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,16 +127,13 @@
 		A8005576176BF8CB00C3659B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A8005578176BF8CB00C3659B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A800557A176BF8CB00C3659B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A800557C176BF8CB00C3659B /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		A800557D176BF8CB00C3659B /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		A800557C176BF8CB00C3659B /* ThreeSecondsRuleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeSecondsRuleController.h; sourceTree = "<group>"; };
+		A800557D176BF8CB00C3659B /* ThreeSecondsRuleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeSecondsRuleController.m; sourceTree = "<group>"; };
 		A800557F176BF8CB00C3659B /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		A8005581176BF8CB00C3659B /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		A8005583176BF8CB00C3659B /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		A8005584176BF8CB00C3659B /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		A8005586176BF8CB00C3659B /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		A8005588176BF8CB00C3659B /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		A800558B176BF8CB00C3659B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstViewController.xib; sourceTree = "<group>"; };
-		A800558E176BF8CB00C3659B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondViewController.xib; sourceTree = "<group>"; };
+		A800558B176BF8CB00C3659B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ThreeSecondsRuleController.xib; sourceTree = "<group>"; };
 		A8005598176C49DD00C3659B /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = GameAlfa/Project.h; sourceTree = "<group>"; };
 		A8005599176C49DD00C3659B /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = GameAlfa/Project.m; sourceTree = "<group>"; };
 		A800559F176CA13100C3659B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
@@ -118,18 +156,23 @@
 		A897C9B01883634700728744 /* CacheEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheEntity.m; path = DomainModel/CacheEntity.m; sourceTree = "<group>"; };
 		A897C9B21883803D00728744 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = DomainModel/CacheManager.h; sourceTree = "<group>"; };
 		A897C9B31883803D00728744 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = DomainModel/CacheManager.m; sourceTree = "<group>"; };
-		A89809621884F3FE00675FCF /* CircularButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularButton.h; sourceTree = "<group>"; };
-		A89809631884F3FE00675FCF /* CircularButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularButton.m; sourceTree = "<group>"; };
+		A89809621884F3FE00675FCF /* CircularButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircularButton.h; path = GameAlfa/CircularButton.h; sourceTree = "<group>"; };
+		A89809631884F3FE00675FCF /* CircularButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircularButton.m; path = GameAlfa/CircularButton.m; sourceTree = "<group>"; };
 		A8980965188508BC00675FCF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A89A1BB517AE94F6006B6CC6 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = DomainModel/Level.h; sourceTree = "<group>"; };
 		A89A1BB617AE94F6006B6CC6 /* Level.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Level.m; path = DomainModel/Level.m; sourceTree = "<group>"; };
 		A89A1BB917AE9ED9006B6CC6 /* Step.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Step.h; path = DomainModel/Step.h; sourceTree = "<group>"; };
 		A89A1BBA17AE9ED9006B6CC6 /* Step.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Step.m; path = DomainModel/Step.m; sourceTree = "<group>"; };
+		A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSToolkit.xcodeproj; path = Vendor/sstoolkit/SSToolkit.xcodeproj; sourceTree = "<group>"; };
+		A89B931B1888E38300D24760 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectTableViewController.h; sourceTree = "<group>"; };
 		A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTableViewController.m; sourceTree = "<group>"; };
 		A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = MainStoryBoard.storyboard; path = ../MainStoryBoard.storyboard; sourceTree = "<group>"; };
-		A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCustomColoredAccessory.h; sourceTree = "<group>"; };
-		A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCustomColoredAccessory.m; sourceTree = "<group>"; };
+		A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTCustomColoredAccessory.h; path = GameAlfa/DTCustomColoredAccessory.h; sourceTree = "<group>"; };
+		A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTCustomColoredAccessory.m; path = GameAlfa/DTCustomColoredAccessory.m; sourceTree = "<group>"; };
+		A8A13E981886C2DD0038BFB4 /* SyntaxHighlightTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SyntaxHighlightTextStorage.h; path = GameAlfa/SyntaxHighlightTextStorage.h; sourceTree = "<group>"; };
+		A8A13E991886C2DD0038BFB4 /* SyntaxHighlightTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SyntaxHighlightTextStorage.m; path = GameAlfa/SyntaxHighlightTextStorage.m; sourceTree = "<group>"; };
+		A8A20046188E119400EF7C3C /* Body.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Body.html; sourceTree = "<group>"; };
 		A8A3F242176D607000924DCB /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabase.h; path = GameAlfa/FMDatabase.h; sourceTree = "<group>"; };
 		A8A3F243176D607000924DCB /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMDatabase.m; path = GameAlfa/FMDatabase.m; sourceTree = "<group>"; };
 		A8A3F244176D607000924DCB /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMDatabaseAdditions.h; path = GameAlfa/FMDatabaseAdditions.h; sourceTree = "<group>"; };
@@ -158,9 +201,8 @@
 		A8A4F4AA17942CA900D7013F /* IntentionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntentionTest.m; sourceTree = "<group>"; };
 		A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnlatadosViewController.h; sourceTree = "<group>"; };
 		A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnlatadosViewController.m; sourceTree = "<group>"; };
-		A8E672C0179CAECA00FBCFCD /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectCell.h; sourceTree = "<group>"; };
-		A8E672C1179CAECA00FBCFCD /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectCell.m; sourceTree = "<group>"; };
-		F41EA67D68304F6DB73E7794 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E672C0179CAECA00FBCFCD /* ProjectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProjectCell.h; path = GameAlfa/ProjectCell.h; sourceTree = "<group>"; };
+		A8E672C1179CAECA00FBCFCD /* ProjectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProjectCell.m; path = GameAlfa/ProjectCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +210,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89B931C1888E38300D24760 /* MessageUI.framework in Frameworks */,
+				A89B931A1888E34100D24760 /* libSSToolkit.a in Frameworks */,
 				A8980966188508BC00675FCF /* QuartzCore.framework in Frameworks */,
 				A80055A0176CA13100C3659B /* libsqlite3.0.dylib in Frameworks */,
 				A8005565176BF8CB00C3659B /* UIKit.framework in Frameworks */,
@@ -194,6 +238,8 @@
 		A8005555176BF8CB00C3659B = {
 			isa = PBXGroup;
 			children = (
+				A8A0BE0518936C5700DD9E4B /* Utils */,
+				A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */,
 				A8A3F26B176D656000924DCB /* DomainModel */,
 				A80055A1176CA1B200C3659B /* fmdb */,
 				A800559F176CA13100C3659B /* libsqlite3.0.dylib */,
@@ -217,13 +263,13 @@
 		A8005563176BF8CB00C3659B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A89B931B1888E38300D24760 /* MessageUI.framework */,
 				A8980965188508BC00675FCF /* QuartzCore.framework */,
 				A8979811187D04330052AD1C /* WindowsAzureMobileServices.framework */,
 				A8005564176BF8CB00C3659B /* UIKit.framework */,
 				A8005566176BF8CB00C3659B /* Foundation.framework */,
 				A8005568176BF8CB00C3659B /* CoreGraphics.framework */,
 				A8A3F25A176D653C00924DCB /* SenTestingKit.framework */,
-				F41EA67D68304F6DB73E7794 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -231,34 +277,20 @@
 		A800556A176BF8CB00C3659B /* GameAlfa */ = {
 			isa = PBXGroup;
 			children = (
-				A8A43A7417A77B580079E766 /* ProjectDetailViewController.h */,
-				A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */,
-				A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */,
-				A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */,
+				A8A0BE0718936DD000DD9E4B /* Project */,
+				A8A0BE0618936D6200DD9E4B /* Enlatados */,
+				A8A20046188E119400EF7C3C /* Body.html */,
 				A89E4DF3179B7AC5008D091B /* MainStoryBoard.storyboard */,
-				A800558A176BF8CB00C3659B /* FirstViewController.xib */,
+				A800558A176BF8CB00C3659B /* ThreeSecondsRuleController.xib */,
 				A8005573176BF8CB00C3659B /* AppDelegate.h */,
 				A8005574176BF8CB00C3659B /* AppDelegate.m */,
-				A800557C176BF8CB00C3659B /* FirstViewController.h */,
-				A800557D176BF8CB00C3659B /* FirstViewController.m */,
+				A800557C176BF8CB00C3659B /* ThreeSecondsRuleController.h */,
+				A800557D176BF8CB00C3659B /* ThreeSecondsRuleController.m */,
 				A800557F176BF8CB00C3659B /* first.png */,
 				A8005581176BF8CB00C3659B /* first@2x.png */,
-				A8005583176BF8CB00C3659B /* SecondViewController.h */,
-				A8005584176BF8CB00C3659B /* SecondViewController.m */,
 				A8005586176BF8CB00C3659B /* second.png */,
 				A8005588176BF8CB00C3659B /* second@2x.png */,
-				A800558D176BF8CB00C3659B /* SecondViewController.xib */,
 				A800556B176BF8CB00C3659B /* Supporting Files */,
-				A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */,
-				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
-				A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */,
-				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
-				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
-				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
-				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
-				A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */,
-				A89809621884F3FE00675FCF /* CircularButton.h */,
-				A89809631884F3FE00675FCF /* CircularButton.m */,
 			);
 			path = GameAlfa;
 			sourceTree = "<group>";
@@ -293,6 +325,53 @@
 				A8A3F24C176D607000924DCB /* FMResultSet.m */,
 			);
 			name = fmdb;
+			sourceTree = "<group>";
+		};
+		A89B930A1888E2D000D24760 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A89B93101888E2D100D24760 /* libSSToolkit.a */,
+				A89B93121888E2D100D24760 /* SSToolkitTests.app */,
+				A89B93141888E2D100D24760 /* SSToolkitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8A0BE0518936C5700DD9E4B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A8E672C1179CAECA00FBCFCD /* ProjectCell.m */,
+				A8E672C0179CAECA00FBCFCD /* ProjectCell.h */,
+				A89809631884F3FE00675FCF /* CircularButton.m */,
+				A89809621884F3FE00675FCF /* CircularButton.h */,
+				A89EB31F17AF256A001E074A /* DTCustomColoredAccessory.h */,
+				A89EB32017AF256A001E074A /* DTCustomColoredAccessory.m */,
+				A8A13E991886C2DD0038BFB4 /* SyntaxHighlightTextStorage.m */,
+				A8A13E981886C2DD0038BFB4 /* SyntaxHighlightTextStorage.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A8A0BE0618936D6200DD9E4B /* Enlatados */ = {
+			isa = PBXGroup;
+			children = (
+				A8ACCC8218766F5B00E6F31D /* EnlatadosViewController.h */,
+				A8ACCC8318766F5B00E6F31D /* EnlatadosViewController.m */,
+				A893673E187A416300D78EBE /* EnlatadoDetailViewController.h */,
+				A893673F187A416300D78EBE /* EnlatadoDetailViewController.m */,
+			);
+			name = Enlatados;
+			sourceTree = "<group>";
+		};
+		A8A0BE0718936DD000DD9E4B /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				A89E4DEF179B7A11008D091B /* ProjectTableViewController.h */,
+				A89E4DF0179B7A11008D091B /* ProjectTableViewController.m */,
+				A8A43A7417A77B580079E766 /* ProjectDetailViewController.h */,
+				A8A43A7517A77B580079E766 /* ProjectDetailViewController.m */,
+			);
+			name = Project;
 			sourceTree = "<group>";
 		};
 		A8A3F25E176D653C00924DCB /* GameAlfaTest */ = {
@@ -366,6 +445,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				A89B93171888E32800D24760 /* PBXTargetDependency */,
+				A89B93191888E32800D24760 /* PBXTargetDependency */,
 			);
 			name = GameAlfa;
 			productName = GameAlfa;
@@ -414,6 +495,12 @@
 			mainGroup = A8005555176BF8CB00C3659B;
 			productRefGroup = A8005561176BF8CB00C3659B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A89B930A1888E2D000D24760 /* Products */;
+					ProjectRef = A89B93091888E2D000D24760 /* SSToolkit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A800555F176BF8CB00C3659B /* GameAlfa */,
@@ -421,6 +508,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A89B93101888E2D100D24760 /* libSSToolkit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSSToolkit.a;
+			remoteRef = A89B930F1888E2D100D24760 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A89B93121888E2D100D24760 /* SSToolkitTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SSToolkitTests.app;
+			remoteRef = A89B93111888E2D100D24760 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A89B93141888E2D100D24760 /* SSToolkitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSToolkitResources.bundle;
+			remoteRef = A89B93131888E2D100D24760 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A800555E176BF8CB00C3659B /* Resources */ = {
@@ -435,8 +546,9 @@
 				A8005580176BF8CB00C3659B /* first.png in Resources */,
 				A8005582176BF8CB00C3659B /* first@2x.png in Resources */,
 				A8005587176BF8CB00C3659B /* second.png in Resources */,
-				A800558C176BF8CB00C3659B /* FirstViewController.xib in Resources */,
-				A800558F176BF8CB00C3659B /* SecondViewController.xib in Resources */,
+				A800558C176BF8CB00C3659B /* ThreeSecondsRuleController.xib in Resources */,
+				A8A20047188E119400EF7C3C /* Body.html in Resources */,
+				A89B931D1888E3C700D24760 /* SSToolkitResources.bundle in Resources */,
 				A89E4DF4179B7AC5008D091B /* MainStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,10 +618,10 @@
 				A8005575176BF8CB00C3659B /* AppDelegate.m in Sources */,
 				A80A3107187919E20054C5C5 /* Enlatado.m in Sources */,
 				A897B5D9187F7A81008148E6 /* GameAlfaService.m in Sources */,
-				A800557E176BF8CB00C3659B /* FirstViewController.m in Sources */,
-				A8005585176BF8CB00C3659B /* SecondViewController.m in Sources */,
+				A800557E176BF8CB00C3659B /* ThreeSecondsRuleController.m in Sources */,
 				A800559A176C49DD00C3659B /* Project.m in Sources */,
 				A8A3F24D176D607000924DCB /* FMDatabase.m in Sources */,
+				A8A13E9A1886C2DD0038BFB4 /* SyntaxHighlightTextStorage.m in Sources */,
 				A8A3F24E176D607000924DCB /* FMDatabaseAdditions.m in Sources */,
 				A8A3F24F176D607000924DCB /* FMDatabasePool.m in Sources */,
 				A8A3F250176D607000924DCB /* FMDatabaseQueue.m in Sources */,
@@ -554,6 +666,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A89B93171888E32800D24760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSToolkit;
+			targetProxy = A89B93161888E32800D24760 /* PBXContainerItemProxy */;
+		};
+		A89B93191888E32800D24760 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSToolkitResources;
+			targetProxy = A89B93181888E32800D24760 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		A800556D176BF8CB00C3659B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -563,20 +688,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A800558A176BF8CB00C3659B /* FirstViewController.xib */ = {
+		A800558A176BF8CB00C3659B /* ThreeSecondsRuleController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A800558B176BF8CB00C3659B /* en */,
 			);
-			name = FirstViewController.xib;
-			sourceTree = "<group>";
-		};
-		A800558D176BF8CB00C3659B /* SecondViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A800558E176BF8CB00C3659B /* en */,
-			);
-			name = SecondViewController.xib;
+			name = ThreeSecondsRuleController.xib;
 			sourceTree = "<group>";
 		};
 		A8A3F261176D653C00924DCB /* InfoPlist.strings */ = {
@@ -658,6 +775,19 @@
 				);
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -684,6 +814,19 @@
 				);
 				INFOPLIST_FILE = "GameAlfa/GameAlfa-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

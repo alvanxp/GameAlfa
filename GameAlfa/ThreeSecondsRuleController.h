@@ -7,8 +7,9 @@
 //
 #import "CircularButton.h"
 #import <UIKit/UIKit.h>
+#import "TTTAttributedLabel.h"
 
-@interface FirstViewController : UIViewController
+@interface ThreeSecondsRuleController : UIViewController<UITextViewDelegate>
 {
     NSTimer *pollingTimer;
     NSDateFormatter *dateFormatter;
@@ -18,4 +19,5 @@
 @property (retain, nonatomic) IBOutlet UITextView *enlatadoLabel;
 @property (retain, nonatomic) IBOutlet UILabel *timerLabel;
 @property (nonatomic, retain) NSDateFormatter *dateFormatter;
+
 @end

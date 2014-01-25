@@ -42,7 +42,6 @@
 
 -(void) deleteItems
 {
-    int resultId = -1;
     @try {
         NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
         NSString *documentsDir = [docPaths objectAtIndex:0];
@@ -64,7 +63,6 @@
 
 -(void) DeleteItem:(NSString *)entity
 {
-    int resultId = -1;
     @try {
         NSArray *docPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
         NSString *documentsDir = [docPaths objectAtIndex:0];

@@ -14,4 +14,5 @@
 @property (nonatomic,retain) NSString* resume;
 @property (nonatomic,retain) NSString* description;
 @property (nonatomic, assign) int rating;
++(Enlatado*) noteWithText:(NSString *)title detail:(NSString *)detailText resume:(NSString *)resumeText;
 @end

@@ -15,4 +15,13 @@
 @synthesize rating;
 @synthesize resume;
 
++(Enlatado*) noteWithText:(NSString *)title detail:(NSString *)detailText resume:(NSString *)resumeText
+{
+    Enlatado *enlatado = [Enlatado new];
+    enlatado.title = title;
+    enlatado.description = detailText;
+    enlatado.resume = resumeText;
+    return enlatado;
+}
+
 @end

@@ -59,10 +59,10 @@ static GameAlfaService *gameAlfaInstance=nil;
 
 -(void) retrieveEnlatado:(completionEnlatado)completion
 {
-    [self retrieveEnlatados:^(NSArray *enlatados) {
+    [self retrieveEnlatados:^(NSArray *enlatadosResult) {
         int count = enlatados.count;
         int r=arc4random_uniform(count);
-        Enlatado *result = [enlatados objectAtIndex:r];
+        Enlatado *result = [enlatadosResult objectAtIndex:r];
         completion(result);
     }];
 }
@@ -94,7 +94,7 @@ static GameAlfaService *gameAlfaInstance=nil;
                 CacheEntity *newCacheManager = [[CacheEntity alloc] init];
                 newCacheManager.entity = @"ENLATADO";
                 newCacheManager.downloadDate = [NSDate date];
-                newCacheManager.expirationDate = [newCacheManager.downloadDate dateByAddingTimeInterval:(5*60)];
+                newCacheManager.expirationDate = [newCacheManager.downloadDate dateByAddingTimeInterval:(100*60)];
                 int idEntity = [[[CacheManager sharedInstance] entityManager] AddNewCacheManagerItem:
                                 newCacheManager];
                 NSArray *result=nil;

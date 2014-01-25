@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="-273" y="-580"/>
         </scene>
-        <!--First View Controller-->
+        <!--Three Seconds Rule Controller-->
         <scene sceneID="At9-yc-ls7">
             <objects>
-                <viewController id="DmQ-Xo-ukt" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="DmQ-Xo-ukt" customClass="ThreeSecondsRuleController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jsd-gL-XTG"/>
                         <viewControllerLayoutGuide type="bottom" id="YiR-DQ-QBe"/>
@@ -37,15 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqz-G2-rRI">
-                                <rect key="frame" x="10" y="124" width="300" height="246"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. asdfdsf</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-RV-fQn">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx6-RV-fQn">
                                 <rect key="frame" x="84" y="69" width="152" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -54,16 +46,9 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="YiR-DQ-QBe" firstAttribute="top" secondItem="Xqz-G2-rRI" secondAttribute="bottom" constant="8" id="0xC-Lt-06B"/>
-                            <constraint firstItem="Xqz-G2-rRI" firstAttribute="leading" secondItem="Qls-yS-Mrr" secondAttribute="leading" id="diw-br-TFs"/>
-                            <constraint firstItem="Xqz-G2-rRI" firstAttribute="top" secondItem="fx6-RV-fQn" secondAttribute="bottom" constant="27" id="jfJ-vc-Vrb"/>
-                            <constraint firstAttribute="trailing" secondItem="Xqz-G2-rRI" secondAttribute="trailing" constant="10" id="xEO-JI-6wp"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mb5-u2-E9N"/>
                     <connections>
-                        <outlet property="enlatadoLabel" destination="Xqz-G2-rRI" id="mVI-IX-9BR"/>
                         <outlet property="timerLabel" destination="fx6-RV-fQn" id="MDD-gH-Hh6"/>
                     </connections>
                 </viewController>
@@ -128,12 +113,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" id="FgD-Yd-70P">
-                            <rect key="frame" x="0.0" y="130" width="320" height="37"/>
+                            <rect key="frame" x="0.0" y="66" width="320" height="37"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="CellOther" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellOther" textLabel="JYG-h3-cNB" detailTextLabel="wdR-cl-itj" style="IBUITableViewCellStyleSubtitle" id="lNe-AQ-Uob">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lNe-AQ-Uob" id="g1W-el-oXL">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>

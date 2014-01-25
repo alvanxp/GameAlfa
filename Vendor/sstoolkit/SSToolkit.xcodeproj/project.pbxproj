@@ -40,6 +40,7 @@
 		962F5F5E156CCD1200408648 /* NSNumber+SSToolkitAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 962F5F5B156CCD1200408648 /* NSNumber+SSToolkitAdditions.h */; };
 		962F5F5F156CCD1200408648 /* NSNumber+SSToolkitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 962F5F5C156CCD1200408648 /* NSNumber+SSToolkitAdditions.m */; };
 		9EB278B114BBC4360077194C /* SSConcurrentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E9E11121DC29A0085F81E /* SSConcurrentOperation.m */; };
+		A89B93151888E2E900D24760 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FE26B8136684D400B97612 /* QuartzCore.framework */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		B2136B3C13ABCC0C00FEBCFD /* SSBorderedView.h in Headers */ = {isa = PBXBuildFile; fileRef = B2136B3A13ABCC0C00FEBCFD /* SSBorderedView.h */; };
 		B2136B3D13ABCC0C00FEBCFD /* SSBorderedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2136B3B13ABCC0C00FEBCFD /* SSBorderedView.m */; };
@@ -167,7 +168,6 @@
 		B2C7ED6D153A5624006ABE73 /* SSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7ED6B153A5624006ABE73 /* SSButton.m */; };
 		B2D8829413328EEF006B3F55 /* SSHUDWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B2D8829213328EEF006B3F55 /* SSHUDWindow.h */; };
 		B2D8829513328EEF006B3F55 /* SSHUDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D8829313328EEF006B3F55 /* SSHUDWindow.m */; };
-		B2D883C01332D636006B3F55 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D883BF1332D636006B3F55 /* QuartzCore.framework */; };
 		B2E241541301C71400F7DC3B /* SSAddressBarTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E2414E1301C71400F7DC3B /* SSAddressBarTextField.h */; };
 		B2E241551301C71400F7DC3B /* SSAddressBarTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E2414F1301C71400F7DC3B /* SSAddressBarTextField.m */; };
 		B2E241561301C71400F7DC3B /* SSAddressBarTextFieldBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E241501301C71400F7DC3B /* SSAddressBarTextFieldBackgroundView.h */; };
@@ -421,10 +421,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89B93151888E2E900D24760 /* QuartzCore.framework in Frameworks */,
 				21AFC57816FB42F2009689DA /* MessageUI.framework in Frameworks */,
 				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
 				B215051210583BBB00409ED4 /* UIKit.framework in Frameworks */,
-				B2D883C01332D636006B3F55 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
