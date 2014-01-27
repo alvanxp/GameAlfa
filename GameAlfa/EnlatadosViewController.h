@@ -10,7 +10,7 @@
 
 @interface EnlatadosViewController : UITableViewController
 {
-    NSMutableIndexSet *expandedSections;
+    NSMutableIndexSet *_expandedSections;
 }
 
 @property (retain, nonatomic) IBOutlet UIActivityIndicatorView *loadingView;

@@ -11,10 +11,9 @@
 
 @interface ThreeSecondsRuleController : UIViewController<UITextViewDelegate>
 {
-    NSTimer *pollingTimer;
-    NSDateFormatter *dateFormatter;
+    NSTimer *_circularBtnTimer;
     int counter;
-    CircularButton *myButton;
+    CircularButton *_goBtn;
 }
 @property (retain, nonatomic) IBOutlet UITextView *enlatadoLabel;
 @property (retain, nonatomic) IBOutlet UILabel *timerLabel;

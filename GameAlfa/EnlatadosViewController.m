@@ -33,10 +33,6 @@
 {
     [super viewDidLoad];
     self.enlatadoService = [[GameAlfaService alloc]init];
-    Enlatado *enlatado1 = [[Enlatado alloc] init];
-    enlatado1.title = @"La dirección";
-    enlatado1.description = @"En el supermercado abordar al Target en menos de 3 segundos con la frase...";
-    enlatado1.resume = @"Aplicable en la calle o lugar publico";
 
     NSLog(@"Starting to retrieve data");
     [self.loadingView startAnimating];
@@ -49,9 +45,9 @@
         tipo1.enlatados = items;
         
         self.enlatados = [[NSMutableArray alloc] initWithObjects:tipo1, nil];
-        if (!expandedSections)
+        if (!_expandedSections)
         {
-            expandedSections = [[NSMutableIndexSet alloc] init];
+            _expandedSections = [[NSMutableIndexSet alloc] init];
         }
 
         [self.tableView reloadData];
@@ -63,13 +59,10 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(BOOL)tableView:(UITableView *)tableView canCollapseSection:(NSInteger)section
 {
-    //if (section>0) return YES;
-    
     return YES;
 }
 
@@ -77,9 +70,6 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-
     return self.enlatados.count;
 }
 
@@ -88,7 +78,7 @@
     
     if ([self tableView:tableView canCollapseSection:section])
     {
-        if ([expandedSections containsIndex:section])
+        if ([_expandedSections containsIndex:section])
         { 
             TipoEnlatado *objectAtIndex = [self.enlatados objectAtIndex:section];
             return objectAtIndex.enlatados.count+1;
@@ -100,10 +90,7 @@
     
     // Return the number of rows in the section.
     return 1;
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    
-    }
+}
 
 -(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
 {
@@ -143,7 +130,7 @@
                 //cell.textLabel.text = @"Expandable";
                 cell.textLabel.text = objectAtIndex.title;
                 cell.detailTextLabel.text = objectAtIndex.description;
-                if ([expandedSections containsIndex:indexPath.section])
+                if ([_expandedSections containsIndex:indexPath.section])
                 {
                     cell.accessoryView = [DTCustomColoredAccessory accessoryWithColor:[UIColor grayColor] type:DTCustomColoredAccessoryTypeUp];
                 }
@@ -191,7 +178,7 @@
             
             [tableView deselectRowAtIndexPath:indexPath animated:YES];
             NSInteger section = indexPath.section;
-            BOOL currentlyExpanded = [expandedSections containsIndex:section];
+            BOOL currentlyExpanded = [_expandedSections containsIndex:section];
             NSInteger rows;
             
             NSMutableArray *tmpArray = [NSMutableArray array];
@@ -199,11 +186,11 @@
             if (currentlyExpanded)
             {
                 rows = [self tableView:tableView numberOfRowsInSection:section];
-                [expandedSections removeIndex:section];
+                [_expandedSections removeIndex:section];
             }
             else
             {
-                [expandedSections addIndex:section];
+                [_expandedSections addIndex:section];
                 rows = [self tableView:tableView numberOfRowsInSection:section];
             }
             for (int i=1; i<rows; i++)
@@ -294,6 +281,8 @@
  */
 
 - (void)dealloc {
+    [self.enlatados release];
+    [self.enlatadoService release];
     [_loadingView release];
     [super dealloc];
 }

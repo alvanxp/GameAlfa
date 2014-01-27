@@ -30,14 +30,8 @@
     self.title = enlatado.title;
     self.titleLabel.text = enlatado.title;
     self.detailLabel.text = enlatado.description;
-   // CGRect frame = self.view.frame;
-    //frame.size.height = frame.size.height - self.titleLabel.frame.size.height;
-    
     [self.detailLabel setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    //self.detailLabel.frame = frame;
     [self.detailLabel sizeToFit];
-    //self.detailLabel.used
-	// Do any additional setup after loading the view.
     [self contentSizeRectForTextView:self.detailLabel];
 }
 
@@ -61,6 +55,7 @@
 - (void)dealloc {
     [_titleLabel release];
     [_detailLabel release];
+    [enlatado release];
     [super dealloc];
 }
 @end

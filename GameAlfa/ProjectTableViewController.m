@@ -14,9 +14,7 @@
 @end
 
 @implementation ProjectTableViewController
-@synthesize carMakes = _carMakes;
-@synthesize carModels = _carModels;
-@synthesize carImages = _carImages;
+
 @synthesize projects;
 - (id)initWithStyle:(UITableViewStyle)style
 {
